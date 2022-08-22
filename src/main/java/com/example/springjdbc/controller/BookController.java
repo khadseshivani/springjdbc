@@ -40,7 +40,9 @@ public class BookController
 	@GetMapping("/findAllBooks")
 	public List<Book> getBooks()
 	{
+		System.out.println("Hello");
 		return repo.findAll();
+		
 	}
 	
 	@GetMapping("/findAllBooks/{id}")
